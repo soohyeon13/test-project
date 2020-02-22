@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/main_navi"
+    app:startDestination="@id/mainMemoFragment">
+
+    <fragment
+        android:id="@+id/mainMemoFragment"
+        android:name="kr.ac.jejunu.line.ui.fragment.MainMemoFragment"
+        android:label="MainMemoFragment"
+        tool:layout="@layout/fragment_main_memo"
+        >
+        <action
+            android:id="@+id/action_mainMemoFragment_to_memoAddFragment"
+            app:destination="@id/memoAddFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/memoAddFragment"
+        android:name="kr.ac.jejunu.line.ui.fragment.MemoAddFragment"
+        android:label="MemoAddFragment"
+        tool:layout="@layout/fragment_memo_add"
+        />
+</navigation>
